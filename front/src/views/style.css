@@ -1,24 +1,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
 
 
-
-.text1{width: 40%;
+.text1{width: 85%;
   color: yellow;
   font-size: 25px;
-  padding-top: 5%;
-  font-family: 'Playfair Display', serif;
+  padding-top: 7%;
+  padding-right: 5%;
+  font-family: "Germania One";
+  
 
 }
 
-.photo{
-  height: 300px;
-  width: 350px;
-  padding: 5%;
-  padding-left: 10%;
+#imageContainer {
+  position: relative;
+  width: 100%; 
+  height: auto; 
 }
+
+.photo {
+  position: absolute;
+  width:450px;
+  height: 350px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 100px;
+}
+
+.photo.active {
+  opacity: 1;
+}
+
+
+
 .coteinerDescription{
   display: flex;
 align-content: center;}
