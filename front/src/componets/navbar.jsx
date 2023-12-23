@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="conteiner3">
-        <Link className="link" to="/LuckyCoin">
+        <Link className="link" to="/Description">
           <div className="etiqueta">Quienes somos</div>
         </Link>{" "}
         <Link className="link" to="/Menu">

@@ -1,4 +1,24 @@
-.text1{
-  background-color: black;
-  color: yello;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
+
+
+.text1{width: 40%;
+  color: yellow;
+  font-size: 25px;
+  padding-top: 5%;
+  font-family: 'Playfair Display', serif;
+
 }
+
+.photo{
+  height: 300px;
+  width: 350px;
+  padding: 5%;
+  padding-left: 10%;
+}
+.coteinerDescription{
+  display: flex;
+align-content: center;}
