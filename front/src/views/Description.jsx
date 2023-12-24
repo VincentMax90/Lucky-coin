@@ -18,8 +18,9 @@ const Description = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
+  return (<> <div className="conteinerContact">Quiene somos</div>
     <div className="coteinerDescription">
+     
       <div id="imageContainer">
         <img
           src={lucky2}
@@ -64,7 +65,7 @@ const Description = () => {
         servicio excepcional y una atención personalizada para cada uno de
         nuestros clientes.
       </div>
-    </div>
+    </div></>
   );
 };
 
