@@ -18,54 +18,57 @@ const Description = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (<> <div className="conteinerContact">Quiene somos</div>
-    <div className="coteinerDescription">
-     
-      <div id="imageContainer">
-        <img
-          src={lucky2}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 0 ? "active" : ""}`}
-        />
-        <img
-          src={lucky1}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 1 ? "active" : ""}`}
-        />
-        <img
-          src={lucky3}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 2 ? "active" : ""}`}
-        />
-        <img
-          src={lucky4}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 3 ? "active" : ""}`}
-        />
-        <img
-          src={lucky5}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 4 ? "active" : ""}`}
-        />
-        <img
-          src={lucky6}
-          alt="Descripción de la imagen"
-          className={`photo ${index === 5 ? "active" : ""}`}
-        />
-      </div>
-      <div className="text1">
+  return (
+    <>
+      {" "}
+      <div className="conteinerContact">Quiene somos</div>
+      <div className="coteinerDescription">
+        <div id="imageContainer">
+          <img
+            src={lucky2}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 0 ? "active" : ""}`}
+          />
+          <img
+            src={lucky1}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 1 ? "active" : ""}`}
+          />
+          <img
+            src={lucky3}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 2 ? "active" : ""}`}
+          />
+          <img
+            src={lucky4}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 3 ? "active" : ""}`}
+          />
+          <img
+            src={lucky5}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 4 ? "active" : ""}`}
+          />
+          <img
+            src={lucky6}
+            alt="Descripción de la imagen"
+            className={`photo ${index === 5 ? "active" : ""}`}
+          />
+        </div>
+        <div className="text1">
           Fundada a finales de 2019, Lucky-Coin se destaca en el ámbito
-        gastronómico, fusionando la pasión por la cerveza y la comida rápida.
-        Comprometidos con la excelencia, cada día nos esforzamos por superar
-        expectativas, desde la cuidadosa selección de materias primas hasta la
-        elección de los proveedores más confiables. Implementamos un estricto
-        control de calidad para garantizar que cada producto cumpla con los
-        estándares más exigentes. En Lucky-Coin, nos diferenciamos por la
-        dedicación a ofrecer no solo productos de alta calidad, sino también un
-        servicio excepcional y una atención personalizada para cada uno de
-        nuestros clientes.
+          gastronómico, fusionando la pasión por la cerveza y la comida rápida.
+          Comprometidos con la excelencia, cada día nos esforzamos por superar
+          expectativas, desde la cuidadosa selección de materias primas hasta la
+          elección de los proveedores más confiables. Implementamos un estricto
+          control de calidad para garantizar que cada producto cumpla con los
+          estándares más exigentes. En Lucky-Coin, nos diferenciamos por la
+          dedicación a ofrecer no solo productos de alta calidad, sino también
+          un servicio excepcional y una atención personalizada para cada uno de
+          nuestros clientes.
+        </div>
       </div>
-    </div></>
+    </>
   );
 };
 

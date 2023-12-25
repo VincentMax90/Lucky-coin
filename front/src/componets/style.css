@@ -29,11 +29,13 @@
 }
 .conteiner {
   display: flex;
-  height: 100px;
+  flex-wrap: wrap;
+  align-content: stretch;
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  white-space: nowrap;
+  min-height: 100px;
+  max-height: 1000px;
 }
 
 .conteiner2 {
@@ -47,11 +49,14 @@
 .conteiner3 {
   background-color: black;
   border-top: 1px yellow solid;
-  height: 75px;
+  align-content: stretch;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px yellow solid;
+  min-height: 75px;
+  max-height: 1000px;
+  flex-wrap: wrap;
 
 }
 .etiqueta {
