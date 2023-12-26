@@ -19,7 +19,12 @@ User.init(
       type: Sequelize.STRING,
       allowNull: false,
     },
-   
+    operator: {
+      type: Sequelize.BOOLEAN,
+      allowNull: false,
+      defaultValue: false
+    },
+
     email: {
       type: Sequelize.STRING,
       allowNull: false,

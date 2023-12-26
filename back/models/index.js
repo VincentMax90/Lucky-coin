@@ -1,4 +1,4 @@
-
 const User = require("./User.model");
-
-module.exports = { User };
+const Menu = require("./Menu.model");
+const Sold = require("./Sold.model")
+module.exports = { User, Menu };

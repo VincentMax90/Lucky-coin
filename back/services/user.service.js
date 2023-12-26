@@ -2,26 +2,18 @@ const User = require("../models/User.model");
 const tokenService = require("../config/tokens");
 const bcrypt = require("bcrypt");
 
-async function registerUser(
-  nameAndLastname,
-  
-  email,
-  password,
-  
-) {
+async function registerUser(nameAndLastname, operator, email, password) {
   try {
     const existingUser = await User.findOne({ where: { email } });
-
     if (existingUser) {
       throw new Error("El correo electrónico ya está registrado");
     }
 
     const user = await User.create({
       nameAndLastname,
-      
+      operator,
       email,
       password,
-      
     });
     return user;
   } catch (error) {
@@ -69,9 +61,6 @@ async function updateUserProfile(userId, profileData) {
   }
 }
 
-
-
-
 module.exports = {
   registerUser,
   findUserByEmail,
@@ -79,5 +68,4 @@ module.exports = {
   generateToken,
 
   updateUserProfile,
- 
 };
