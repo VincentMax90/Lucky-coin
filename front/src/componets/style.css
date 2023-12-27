@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Comienza con opacidad 0 */
+    opacity: 0; 
   }
   to {
-    opacity: 1; /* Termina con opacidad 1 */
+    opacity: 1; 
   }
 }
 
@@ -55,7 +55,6 @@
   align-items: center;
   border-bottom: 1px yellow solid;
   min-height: 75px;
-  max-height: 1000px;
   flex-wrap: wrap;
 
 }
