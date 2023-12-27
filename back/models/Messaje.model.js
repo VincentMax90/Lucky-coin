@@ -35,7 +35,7 @@ Messaje.init(
     },
    
   },
-  { sequelize: db, modelName: "Messaje" }
+  { sequelize: db, modelName: "messaje" }
 );
 
 module.exports = Messaje;

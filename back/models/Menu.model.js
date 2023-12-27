@@ -30,7 +30,7 @@
         },
       },
     },
-    { sequelize: db, modelName: "Menu" }
+    { sequelize: db, modelName: "menu" }
   );
 
   module.exports = Menu;

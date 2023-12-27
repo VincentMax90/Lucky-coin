@@ -29,7 +29,7 @@ Sold.init(
     
     
   },
-  { sequelize: db, modelName: "Sold" }
+  { sequelize: db, modelName: "sold" }
 );
 
 module.exports = Sold;
