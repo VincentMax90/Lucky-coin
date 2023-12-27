@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       <div className="conteinerContact">Contacto</div>
       <div className="conteiner3">
-        <div className="text3">
+        <div className="text4">
           <il>
             <ul>Arturo Illia 299Bis Funes · Funes · Argentina</ul>
             <ul>(0341) 3417185418 </ul>{" "}
@@ -20,18 +20,25 @@ const Contact = () => {
         </div>
         <div className="formulario textFormulario">
           Nombre<br></br>
-          <input type="text"className="input" />
+          <input type="text" className="input" placeholder="Nombre" />{" "}
+          <span class="validity"></span>
           <br></br>
           Telefono<br></br>
-          <input type="text" className="input" />
+          <input type="text" className="input" placeholder="Telefono" />
           <br></br>
           Email<br></br>
-          <input type="email" className="input" />
+          <input type="email" className="input" placeholder="Email" />
           <br></br>
           Mensaje <br></br>
-          <input type="text" className="inputMensaje" />
+          <textarea
+            className="inputMensaje"
+            rows="5"
+            cols="40"
+            name="text"
+            placeholder="Mensaje"
+          ></textarea>
           <br></br>
-          <input type="submit" />
+          <input className="submit"type="submit" />
         </div>
       </div>
 

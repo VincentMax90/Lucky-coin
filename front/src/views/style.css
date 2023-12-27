@@ -10,16 +10,18 @@
 #imageContainer {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 350%;
+  
 }
 
 .photo {
-  position: absolute;
+position: absolute;
   width: 450px;
   height: 350px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   padding: 100px;
+  
 }
 
 .photo.active {
@@ -28,7 +30,7 @@
 
 .coteinerDescription {
   display: flex;
-  align-content: center;
+  align-content: stretch;
 }
 
 #map {
@@ -71,7 +73,9 @@
 .formulario{
  background-color: yellow;
 height: 100%;
-width: 300px;}
+width: 400px;
+border-radius: 15px;
+margin: 20px 0px;}
 
 
 .input{margin: 4%;
@@ -93,4 +97,14 @@ width: 300px;}
   font-size: 25px;
   padding-top: 7.5%;
   font-family: "Germania One";
+  padding: 10px;
 }
+.text4{
+  max-width: 48%;
+  color: yellow;
+  font-size: 25px;
+  
+  font-family: "Germania One";
+
+}
+
