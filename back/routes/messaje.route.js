@@ -6,4 +6,7 @@ messajeRouter.post("/create", messajeController.MessajeCreate);
 
 messajeRouter.get("/all", messajeController.getAllMessages);
 
+messajeRouter.put("/:id/markAsRead", messajeController.markAsRead);
+
+
 module.exports = messajeRouter;

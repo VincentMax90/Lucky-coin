@@ -20,8 +20,25 @@ async  function getAllMessages() {
 }
 
 
+async function markMessageAsRead(messageId) {
+  try {
+    const message = await Messaje.findByPk(messageId);
+    if (!message) {
+      throw new Error("Message not found");
+    }
+
+    message.read = true;
+    await message.save();
+
+    return message;
+  } catch (error) {
+    throw new Error(`Error marking message as read: ${error.message}`);
+  }
+}
+
+
 
 
 module.exports = {
-  createMessage,getAllMessages
+  createMessage,getAllMessages ,markMessageAsRead
 };

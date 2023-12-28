@@ -29,8 +29,7 @@ Messaje.init(
       allowNull: false,
     },
     read: {
-      type: Sequelize.STRING,
-      allowNull: false,
+      type: Sequelize.BOOLEAN,
       defaultValue: false,
     },
    

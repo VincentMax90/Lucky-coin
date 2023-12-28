@@ -1,12 +1,12 @@
 import React from "react";
-
+import MessageList from "../componets/messajeList";
 
 
 const Messajes = () => {
   return (
     <>
       {" "}
-      <div>Bienvenido a messajes</div>
+      <div><MessageList/></div>
      
     </>
   );
