@@ -76,7 +76,6 @@
 }
 
 .listMessaje {
-  border: 1px solid white;
   color: yellow;
   margin: 10px;
   width: auto;
@@ -88,12 +87,10 @@
   
 }
 .dateMessaje{
-border: 1px solid red;
   width: 50%;
   
 }
 .messaje{
-  border: 1px solid yellow;
   width: 49%;
   display: flex;
 justify-content: center;

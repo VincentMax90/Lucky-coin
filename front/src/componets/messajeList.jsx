@@ -20,6 +20,27 @@ const MessageList = () => {
     fetchMessages();
   }, []);
 
+  const formatDate = (dateString) => {
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+
+    return new Date(dateString).toLocaleDateString("es-ES", options);
+  };
+
+  const formatTime = (dateString) => {
+    const options = {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: false,
+    };
+
+    return new Date(dateString).toLocaleTimeString("es-ES", options);
+  };
+
   const filteredMessages = showNew === null
     ? messages
     : showNew
@@ -52,7 +73,10 @@ const MessageList = () => {
         <div key={message.id} className="listMessaje">
           <div className="dateMessaje">
             <p>
-              <strong className="name">Fecha:</strong> {message.date}
+              <strong className="name">Fecha:</strong> {formatDate(message.date)}
+            </p>
+            <p>
+              <strong className="name">Hora:</strong> {formatTime(message.date)}
             </p>
             <p>
               <strong className="name">Nombre:</strong> {message.name}
@@ -68,12 +92,11 @@ const MessageList = () => {
             <p>
               <strong className="name">Mensaje:</strong> <br></br>
               {message.messaje} <br></br>
-              <strong className="name">Leido:</strong>{" "}
+              <strong className="name">Estado:</strong>{" "}
               {message.read === true ? "leído" : "no leído"}
             </p>
           </div>
           <div className="buttonsContainer">
-            {/* Botón "Marcar como Leído" para mensajes no leídos */}
             {!message.read && (
               <button onClick={() => markAsRead(message.id)}>
                 Marcar como Leído
