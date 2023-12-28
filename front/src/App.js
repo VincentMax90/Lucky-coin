@@ -6,6 +6,8 @@ import Navbar from "./componets/navbar";
 import Description from "./views/Description";
 import Menu from "./views/Menu";
 import Contact from "./views/Contact";
+import Messajes from "./views/Messajes";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/Description" element={<Description/>}></Route>
         <Route path="/Menu" element={<Menu/>}></Route>
         <Route path="/Contact" element={<Contact/>}></Route>
+        <Route path="/Messajes" element={<Messajes />}></Route>
       </Routes>
     </>
   );

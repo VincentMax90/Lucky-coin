@@ -11,3 +11,14 @@ exports.MessajeCreate = async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
+
+
+exports.getAllMessages = async (req, res) => {
+  try {
+    const messages = await messajeService.getAllMessages();
+    res.status(200).json(messages);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};

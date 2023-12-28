@@ -9,6 +9,19 @@ async function createMessage(messageData) {
   }
 }
 
+
+async  function getAllMessages() {
+  try {
+    const messages = await Messaje.findAll();
+    return messages;
+  } catch (error) {
+    throw new Error(`Error retrieving messages: ${error.message}`);
+  }
+}
+
+
+
+
 module.exports = {
-  createMessage,
+  createMessage,getAllMessages
 };
