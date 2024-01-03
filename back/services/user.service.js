@@ -50,7 +50,7 @@ async function updateUserProfile(userId, profileData) {
     const updatedUser = await User.findByPk(userId, {
       attributes: {
         exclude: ["password"],
-        include: ["nameAndLastname", "email",  ],
+        include: ["nameAndLastname", "email" ],
       },
     });
 

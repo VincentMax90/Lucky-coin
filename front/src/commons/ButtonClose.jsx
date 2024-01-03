@@ -1,13 +1,14 @@
 import React from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { setUser } from "../state/user";
+import {  logoutUser } from "../state/user"; // Agrega la importación de logoutUser
 import { useNavigate } from "react-router";
 
 const ButtonClose = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((state) => state.user);
+
   const handleLogout = () => {
     axios
       .get("http://localhost:3001/api/user/logout", {
@@ -17,18 +18,18 @@ const ButtonClose = () => {
       })
       .then((response) => {
         console.log("Logout successful:", response);
-        dispatch(setUser(null));
+        dispatch(logoutUser()); 
         navigate("/");
       })
       .catch((error) => {
         console.error("Logout failed", error);
       });
   };
-  
-  console.log(user)
+
+
   return (
     <>
-      {user!= null ? (
+      {user.nameAndLastname != null ? (
         <button
           onClick={handleLogout}
           variant="contained"

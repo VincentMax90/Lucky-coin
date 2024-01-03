@@ -9,7 +9,7 @@ const Login = () => {
   const [loginPassword, setLoginPassword] = useState("");
   const dispatch = useDispatch();
 
-  console.log("login: " + loginUser + ", password: " + loginPassword );
+  
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
