@@ -7,7 +7,7 @@ import Description from "./views/Description";
 import Menu from "./views/Menu";
 import Contact from "./views/Contact";
 import Messajes from "./views/Messajes";
-
+import Login from "./views/Login";
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
         <Route path="/Menu" element={<Menu/>}></Route>
         <Route path="/Contact" element={<Contact/>}></Route>
         <Route path="/Messajes" element={<Messajes />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
+
       </Routes>
     </>
   );

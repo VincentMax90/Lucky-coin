@@ -4,6 +4,7 @@ import instagran from "../images/instagram.png";
 import facebook from "../images/facebook.png";
 import pedidosya from "../images/pedidosya.png";
 import { Link } from "react-router-dom";
+import ButtonClose from "../commons/ButtonClose";
 
 const Navbar = () => {
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
               src={pedidosya}
               alt="Descripción de la imagen"
             />
-          </a>
+          </a> <ButtonClose/>
         </div>
       </div>
       <div className="conteiner3">
