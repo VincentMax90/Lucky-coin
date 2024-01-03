@@ -99,3 +99,9 @@ justify-content: center;
 .name{
   font-size: 25px;
 }
+
+.fotter{
+  display: flex;
+  justify-content: end;
+  margin-top: 100px;
+}

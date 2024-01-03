@@ -32,7 +32,7 @@ const ButtonClose = () => {
       {user.nameAndLastname != null ? (
         <button
           onClick={handleLogout}
-          variant="contained"
+          
           style={{
             width: "50px",
             backgroundColor: "rgb(165 105 189 )",
@@ -42,7 +42,17 @@ const ButtonClose = () => {
         >
           Salir
         </button>
-      ) : null}
+      ) :<button
+      onClick={() => navigate("/login")}     
+      style={{
+        width: "50px",
+        backgroundColor: "rgb(165 105 189 )",
+        margin: "15px",
+        fontWeight: "bold",
+      }}
+    >
+      login
+    </button>}
     </>
   );
 };

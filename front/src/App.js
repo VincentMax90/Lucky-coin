@@ -8,7 +8,7 @@ import Menu from "./views/Menu";
 import Contact from "./views/Contact";
 import Messajes from "./views/Messajes";
 import Login from "./views/Login";
-
+import Fotter from "./commons/Fotter";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
         <Route path="/Login" element={<Login />}></Route>
 
       </Routes>
+      <Fotter/>
     </>
   );
 }
