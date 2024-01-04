@@ -4,8 +4,11 @@ import instagran from "../images/instagram.png";
 import facebook from "../images/facebook.png";
 import pedidosya from "../images/pedidosya.png";
 import { Link } from "react-router-dom";
+import  {useSelector}  from "react-redux";
 
 const Navbar = () => {
+  const user = useSelector((state) => state.user);
+
   return (
     <>
       {" "}
@@ -37,7 +40,7 @@ const Navbar = () => {
             />
           </a> 
         </div>
-      </div>
+      </div>{ user.nameAndLastname === null ? (
       <div className="conteiner3">
         <Link className="link" to="/Description">
           <div className="etiqueta">Quienes somos</div>
@@ -47,7 +50,17 @@ const Navbar = () => {
         </Link>{" "}  <Link className="link" to="/Contact">
           <div className="etiqueta">Contacto</div>
         </Link>{" "}
-      </div>
+      </div> ):(
+      <div className="conteiner3">
+        <Link className="link" to="/Description">
+          <div className="etiqueta">Quienes somos</div>
+        </Link>{" "}
+        <Link className="link" to="/EditMenu">
+          <div className="etiqueta">Menu</div>
+        </Link>{" "}  <Link className="link" to="/messajes">
+          <div className="etiqueta">Mensajes</div>
+        </Link>{" "}
+      </div> )}
     </>
   );
 };

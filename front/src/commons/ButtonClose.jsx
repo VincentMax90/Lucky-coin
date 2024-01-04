@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import {  logoutUser } from "../state/user"; // Agrega la importación de logoutUser
+import {  logoutUser } from "../state/user";
 import { useNavigate } from "react-router";
 
 const ButtonClose = () => {
@@ -51,7 +51,7 @@ const ButtonClose = () => {
         fontWeight: "bold",
       }}
     >
-      login
+      Login
     </button>}
     </>
   );

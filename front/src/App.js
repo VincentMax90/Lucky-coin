@@ -9,6 +9,7 @@ import Contact from "./views/Contact";
 import Messajes from "./views/Messajes";
 import Login from "./views/Login";
 import Fotter from "./commons/Fotter";
+import EditMenu from "./views/EditMenu";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Contact" element={<Contact/>}></Route>
         <Route path="/Messajes" element={<Messajes />}></Route>
         <Route path="/Login" element={<Login />}></Route>
+        <Route path="/EditMenu" element={<EditMenu />}></Route>
 
       </Routes>
       <Fotter/>

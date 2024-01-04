@@ -10,7 +10,7 @@
         allowNull: false,
       },
       name: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
         allowNull: false,
         defaultValue: false,
       },
