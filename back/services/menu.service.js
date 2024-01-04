@@ -15,8 +15,18 @@ async function creationMenu(category, name, description,price,photo) {
 }
 
 
+async  function getAllMenu() {
+  try {
+    const menu = await Menu.findAll();
+    return menu;
+  } catch (error) {
+    throw new Error(`Error retrieving menu: ${error.message}`);
+  }
+}
+
+
 module.exports = {
-  creationMenu,
+  creationMenu,getAllMenu
   
 };
 

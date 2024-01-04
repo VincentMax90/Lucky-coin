@@ -14,3 +14,12 @@ exports.creationMenu = async (req, res) => {
 };
 
 
+exports.getAllMenu = async (req, res) => {
+  try {
+    const menu = await menuService.getAllMenu();
+    res.status(200).json(menu);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};

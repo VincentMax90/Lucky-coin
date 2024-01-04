@@ -4,11 +4,7 @@ const menuController = require("../controllers/menu.controller");
 
 menuRouter.post("/creation", menuController.creationMenu);
 
-menuRouter.get("/allMenu", );
-
-menuRouter.put("/:id/edit",);
+menuRouter.get("/all", menuController.getAllMenu);
+menuRouter.put("/:id/edit");
 
 module.exports = menuRouter;
-
-
-
