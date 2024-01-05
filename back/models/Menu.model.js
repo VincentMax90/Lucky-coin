@@ -25,9 +25,7 @@
       },
       photo: {
         type: Sequelize.STRING,
-        validate: {
-          isUrl: true,
-        },
+        
       },
     },
     { sequelize: db, modelName: "menu" }
