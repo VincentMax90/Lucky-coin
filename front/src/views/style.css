@@ -119,3 +119,22 @@
   flex-direction: column;
   height: 70vh;
 }
+
+.menu-card {
+  border: 1px solid white;
+  color: yellow;
+  width: 400px;
+  display: flex;
+  height: 200px;
+  margin: 2%;
+}
+.photoCard {
+  width: 200px;
+  height: 200px;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2% 10%;
+}
